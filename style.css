@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'xmas-holiday';
+    src: url('fonts/MountainsofChristmas.ttf');
+}
+
+.main-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.page-bg {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+    position: relative;
+}
+
+.header-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'xmas-holiday';
+    fallback: 'sans-serif';
+    color: darkred;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-menu ul {
+    list-style: none;
+}
+
+.header-menu li {
+    display: inline-block;
+    font-size: large;
+    margin-right: 1em;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.header-menu li::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    transition: 400ms;
+    background: darkred;
+}
+
+.header-menu li:hover {
+    cursor: pointer;
+}
+
+.header-menu li:hover:after {
+    width: 100%;
+}
