@@ -1,32 +1,109 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          autoplay: 'play',
+          gap: '6'
+        }).mount();
+        splide.mount();
+      });
+    </script>
     <title>Algorithmics Christmas</title>
   </head>
   <body>
-    <img class="page-bg" src="img/christmas-tree-1.jpg" alt=""/>
+    <img class="page-bg" src="img/christmas-tree-1.jpg" alt="" />
     <div class="main-wrap">
       <div id="main-content">
         <div class="header">
-            <div class="header-title">
-              <h1>Merry Algorighmic Christmas!</h1>
-            </div>
-            <div class="header-menu">
-              <ul>
-                <li>Shop</li>
-                <li>Χριστούγεννα απ'ολο τον κόσμο!</li>
-                <li>Γλυκά και εδέσματα</li>
-                <li>Χριστουγεννιάτικο Design</li>
-                <li>Προτάσεις για ταινίες</li>
-              </ul>
-            </div>
-          </div>    
-        <h1>Content</h1>
-        <p>Lorem ipsum sit dolor amet</p>
+          <div class="header-title">
+            <h1>Merry Algorighmic Christmas!</h1>
+          </div>
+          <div class="header-menu">
+            <ul>
+              <li><a href="pages/shop.html">Shop</a></li>
+              <li>
+                <a href="pages/world-xmas.html"
+                  >Χριστούγεννα απ'ολο τον κόσμο!</a
+                >
+              </li>
+              <li><a href="pages/recipes.html">Γλυκά και εδέσματα</a></li>
+              <li>
+                <a href="pages/xmas-design.html">Χριστουγεννιάτικο Design</a>
+              </li>
+              <li>
+                <a href="pages/xmas-movies.html">Προτάσεις για ταινίες</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="car-wrap">
+                  <a href="pages/shop.html"
+                    ><img class="car-img" src="img/car-cat-gifts.jpg" />
+                    <div class="car-label">Shop</div></a
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="car-wrap">
+                  <a href="pages/xmas-design.html"
+                    ><img class="car-img" src="img/car-cat-deco.jpg" />
+                    <div class="car-label">Χριστουγεννιάτικο Design</div></a
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="car-wrap">
+                  <a href="pages/world-xmas.html"
+                    ><img class="car-img" src="img/car-cat-world.jpg" />
+                    <div class="car-label">
+                      Χριστούγεννα απ'ολο τον κόσμο!
+                    </div></a
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="car-wrap">
+                  <a href="pages/recipes.html"
+                    ><img class="car-img" src="img/car-cat-recipes.jpg" />
+                    <div class="car-label">Γλυκά και εδέσματα</div></a
+                  >
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="car-wrap">
+                  <a href="pages/xmas-movies.html"
+                    ><img class="car-img" src="img/car-cat-tv.jpg" />
+                    <div class="car-label">Προτάσεις για ταινίες</div></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
     <div id="footer">
-      <h1>Footer</h1>
+      <strong>Επικοινωνία</strong>
+      <ul>
+        <li>
+          <a href="mailto:ersi.perperidou@gmail.com"
+            >ersi.perperidou@gmail.com</a
+          >
+        </li>
+        <li>+30 695 123 4567</li>
+      </ul>
     </div>
   </body>
 </html>
